@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Row 1 Label -->
+        <TextView
+            android:id="@+id/diceLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dice 1"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Row 1 -->
+        <RadioGroup
+            android:id="@+id/radioGroupRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <RadioButton android:id="@+id/dice1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <RadioButton android:id="@+id/dice1_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+            <RadioButton android:id="@+id/dice1_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+            <RadioButton android:id="@+id/dice1_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+            <RadioButton android:id="@+id/dice1_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+            <RadioButton android:id="@+id/dice1_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" />
+        </RadioGroup>
+
+        <!-- Row 2 Label -->
+        <TextView
+            android:id="@+id/diceLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dice 2"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Row 2 -->
+        <RadioGroup android:id="@+id/radioGroupRow2" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <RadioButton android:id="@+id/dice2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <RadioButton android:id="@+id/dice2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+            <RadioButton android:id="@+id/dice2_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+            <RadioButton android:id="@+id/dice2_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+            <RadioButton android:id="@+id/dice2_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+            <RadioButton android:id="@+id/dice2_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" />
+        </RadioGroup>
+
+        <!-- Row 3 Label -->
+        <TextView
+            android:id="@+id/diceLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dice 3"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Row 3 -->
+        <RadioGroup android:id="@+id/radioGroupRow3" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <RadioButton android:id="@+id/dice3_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <RadioButton android:id="@+id/dice3_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+            <RadioButton android:id="@+id/dice3_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+            <RadioButton android:id="@+id/dice3_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+            <RadioButton android:id="@+id/dice3_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+            <RadioButton android:id="@+id/dice3_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" />
+        </RadioGroup>
+
+        <!-- Row 4 Label -->
+        <TextView
+            android:id="@+id/diceLabel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dice 4"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Row 4 -->
+        <RadioGroup android:id="@+id/radioGroupRow4" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <RadioButton android:id="@+id/dice4_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <RadioButton android:id="@+id/dice4_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+            <RadioButton android:id="@+id/dice4_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+            <RadioButton android:id="@+id/dice4_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+            <RadioButton android:id="@+id/dice4_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+            <RadioButton android:id="@+id/dice4_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" />
+        </RadioGroup>
+
+        <!-- Row 5 Label -->
+        <TextView
+            android:id="@+id/diceLabel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dice 5"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Row 5 -->
+        <RadioGroup android:id="@+id/radioGroupRow5" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <RadioButton android:id="@+id/dice5_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <RadioButton android:id="@+id/dice5_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+            <RadioButton android:id="@+id/dice5_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+            <RadioButton android:id="@+id/dice5_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+            <RadioButton android:id="@+id/dice5_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+            <RadioButton android:id="@+id/dice5_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" />
+        </RadioGroup>
+
+        <!-- Buttons in Horizontal Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OK" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

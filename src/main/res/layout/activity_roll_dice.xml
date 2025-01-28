@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6B2196F3">
+
+    <TableLayout
+        android:id="@+id/scorecardTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333">
+
+        <!-- Header Row -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Category"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Winner"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Points"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Round"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Rows for Each Category -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Aces" />
+
+            <TextView
+                android:id="@+id/acesWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/acesPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/acesRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreAcesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Twos" />
+
+            <TextView
+                android:id="@+id/twosWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/twosPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/twosRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreTwosButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Threes" />
+
+            <TextView
+                android:id="@+id/threesWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/threesPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/threesRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreThreesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Fours" />
+
+            <TextView
+                android:id="@+id/foursWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/foursPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/foursRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreFoursButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Fives" />
+
+            <TextView
+                android:id="@+id/fivesWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/fivesPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/fivesRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreFivesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Sixes" />
+
+            <TextView
+                android:id="@+id/sixesWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/sixesPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/sixesRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreSixesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Three of a Kind" />
+
+            <TextView
+                android:id="@+id/threeOfAKindWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/threeOfAKindPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/threeOfAKindRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreThreeOfAKindButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Four of a Kind" />
+
+            <TextView
+                android:id="@+id/fourOfAKindWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/fourOfAKindPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/fourOfAKindRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreFourOfAKindButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Full House" />
+
+            <TextView
+                android:id="@+id/fullHouseWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/fullHousePoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/fullHouseRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreFullHouseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Four Straight" />
+
+            <TextView
+                android:id="@+id/fourStraightWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/fourStraightPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/fourStraightRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreFourStraightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Five Straight" />
+
+            <TextView
+                android:id="@+id/fiveStraightWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/fiveStraightPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/fiveStraightRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreFiveStraightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="Yahtzee" />
+
+            <TextView
+                android:id="@+id/yahtzeeWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/yahtzeePoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/yahtzeeRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_border"
+                android:padding="8dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/scoreYahtzeeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Score"
+                android:textSize="10sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/dice5"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/one"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <ImageButton
+        android:id="@+id/dice4"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dice5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <ImageButton
+        android:id="@+id/dice3"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/one"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dice4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+
+    <ImageButton
+        android:id="@+id/dice2"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dice3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <ImageButton
+        android:id="@+id/dice1"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/one"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dice2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <TextView
+        android:id="@+id/turnText"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="117dp"
+        android:fontFamily="@font/zen_dots"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/one" />
+
+    <TextView
+        android:id="@+id/roundNumber"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="117dp"
+        android:fontFamily="@font/zen_dots"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/rollNumber"
+        android:layout_width="155dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="236dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <Button
+        android:id="@+id/setManuallyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Manually"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <Button
+        android:id="@+id/rollDiceButton"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:text="Roll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <ImageButton
+        android:id="@+id/logButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Hamburger menu"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@drawable/hamburger" />
+
+    <ImageButton
+        android:id="@+id/hintButton"
+        android:layout_width="37dp"
+        android:layout_height="41dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        app:srcCompat="@drawable/light_bulb" />
+
+    <Button
+        android:id="@+id/rollAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="168dp"
+        android:text="Roll Again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/standButton"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="@+id/scorecardTable"
+        app:layout_constraintTop_toBottomOf="@+id/scorecardTable" />
+
+    <Button
+        android:id="@+id/standButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="168dp"
+        android:text="Stand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scorecardTable"
+        app:layout_constraintTop_toBottomOf="@+id/scorecardTable" />
+
+    <Button
+        android:id="@+id/selectDice"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="508dp"
+        android:text="Ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnText" />
+
+    <TextView
+        android:id="@+id/humanScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/roundNumber"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/computerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/humanScore"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/humanScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
