@@ -67,11 +67,6 @@ This project is a digital implementation of the classic Yahtzee game, developed 
 3. Sync Gradle and build the project.
 4. Run the app on an Android emulator or a physical device.
 
-
-## **Acknowledgments**
-- **AI Assistance**: ChatGPT and Gemini AI in Android Studio for debugging, UI design, and feature implementation.
-- **External Repositories**: Inspiration from similar Java-based projects.
-
 ## **Screenshots**
 
 ![Screenshot 1](screenshots/1.png)
