@@ -55,9 +55,6 @@ This project is a digital implementation of the classic Yahtzee game, developed 
 - AI hints for strategic gameplay improvement.
 - Comprehensive logging system for reviewing game history.
 
-## **Known Issues**
-- The game currently lacks a feature to suspend gameplay mid-turn without saving.
-
 ## **Setup Instructions**
 1. Clone the repository:
    ```bash
